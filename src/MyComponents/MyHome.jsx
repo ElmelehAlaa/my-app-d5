@@ -1,14 +1,12 @@
 import { Anchor } from "react-bootstrap";
-import MyFilmHarryPotter from "./MyFilmsHarryPotter";
-import MyFilmLordOfTheRings from "./MyFilmLordOfTheRings";
-import MyFilmSpiderman from "./MyFilmAvengers";
+import MyFilms from "./MyFilms";
 
 const MyHome = (props) => (
   <div className="bg-dark">
     <div className="container-fluid p-0">
       <div className="d-flex justify-content-between" style={{ paddingTop: "20px", paddingInline: "10px" }}>
         <div className="d-flex">
-          <h2 className="mb-4 text-white">TV Shows</h2>
+          <h2 className="mb-4 text-white mx-4">TV Shows</h2>
           <div className="dropdown ml-4 mt-1">
             <button
               className="btn btn-secondary btn-sm dropdown-toggle rounded-0"
@@ -40,9 +38,9 @@ const MyHome = (props) => (
         </div>
       </div>
 
-      <MyFilmHarryPotter />
-      <MyFilmLordOfTheRings />
-      <MyFilmSpiderman />
+      <MyFilms movieTitle="harry%20potter" title="Harry Potter" />
+      <MyFilms movieTitle="lord%20of%20the%20rings" title="Lord Of The Rings" />
+      <MyFilms movieTitle="avengers" title="Avengers" />
     </div>
   </div>
 );

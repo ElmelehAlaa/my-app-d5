@@ -1,19 +1,19 @@
 import { Component } from "react";
-import FilmCardsAvangers from "./FilmCardsAvengers";
-import Error from "./Error";
+
+import FilmCards from "./FilmCards";
 import Loading from "./Loading";
+import Error from "./Error";
 import { Container } from "react-bootstrap";
 
-class MyFilmAvangers extends Component {
+class MyFilms extends Component {
   state = {
     films: [],
-    selected: false,
     isLoading: true,
     isError: false,
   };
   FetchFilms = async () => {
     try {
-      const response = await fetch("http://www.omdbapi.com/?apikey=d520c310&s=Avengers");
+      const response = await fetch("http://www.omdbapi.com/?apikey=d520c310&s=" + this.props.movieTitle);
       if (response.ok) {
         const data = await response.json();
         this.setState({ films: data });
@@ -37,9 +37,9 @@ class MyFilmAvangers extends Component {
       <Container>
         {this.state.isLoading && <Loading />}
         {this.state.isError && <Error />}
-        {this.state.films.Search && <FilmCardsAvangers films={this.state.films.Search} />}
+        {this.state.films.Search && <FilmCards films={this.state.films.Search} title={this.props.title} />}
       </Container>
     );
   }
 }
-export default MyFilmAvangers;
+export default MyFilms;

@@ -2,7 +2,10 @@ import { Anchor, Nav } from "react-bootstrap";
 
 const MyNavBar = (props) => (
   <>
-    <Nav className="navbar navbar-expand-lg navbar-dark p-0" style={{ backgroundColor: "#221f1f" }}>
+    <Nav
+      className="navbar navbar-expand-lg navbar-dark p-0 position-sticky z-1 top-0"
+      style={{ backgroundColor: "#221f1f" }}
+    >
       <Anchor className="navbar-brand px-5" href="#">
         <img src="assets/logo.png" alt="logo" style={{ width: "100px", height: "55px" }} />
       </Anchor>
