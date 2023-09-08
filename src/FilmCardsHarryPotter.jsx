@@ -5,8 +5,9 @@ class FilmCardsHarryPotter extends Component {
   render() {
     return (
       <Row className=" mb-4 no-gutters text-center  ">
+        <h4 className="text-white mx-5 fs-1 text-start">Harry Potter </h4>
         {this.props.films.map((film) => (
-          <Col xs="11" sm="5" md="4" lg="3" xl="2" className="mb-4 px-1  " key={film.imdbID}>
+          <Col xs="11" sm="5" lg="3" xxl="2" className="mb-4 px-1  " key={film.imdbID}>
             <Card title={film.Title} img={film.Poster} style={{ width: "200px", height: "100%", margin: "auto" }}>
               <Card.Img variant="top" src={film.Poster} style={{ height: "330px", objectFit: "contain" }} />
               <Card.Body className="m-0 p-0">

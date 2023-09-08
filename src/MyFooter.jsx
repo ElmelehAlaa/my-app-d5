@@ -2,7 +2,7 @@ import { Anchor, Col, Row } from "react-bootstrap";
 
 const MyFooter = (props) => (
   <>
-    <footer className="bg-dark">
+    <div className="bg-dark container">
       <div className="row text-center mt-5">
         <div className="col-6 offset-3">
           <div className="row">
@@ -116,7 +116,7 @@ const MyFooter = (props) => (
           </Row>
         </div>
       </div>
-    </footer>
+    </div>
   </>
 );
 

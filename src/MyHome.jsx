@@ -39,11 +39,9 @@ const MyHome = (props) => (
           <i className="fa fa-th icons me-2 fs-4 text-white"></i>
         </div>
       </div>
-      <h4 className="text-white mx-5 fs-1">Harry Potter</h4>
+
       <MyFilmHarryPotter />
-      <h4 className="text-white mx-5 fs-1">Lord Of The Rings</h4>
       <MyFilmLordOfTheRings />
-      <h4 className="text-white mx-5 fs-1">Avengers</h4>
       <MyFilmSpiderman />
     </div>
   </div>

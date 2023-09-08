@@ -3,6 +3,7 @@ import { Component } from "react";
 import FilmCardsLordOfTheRings from "./FilmCardsLordOfTheRings";
 import Error from "./Error";
 import Loading from "./Loading";
+import { Container } from "react-bootstrap";
 
 class MyFilmLordOfTheRings extends Component {
   state = {
@@ -34,11 +35,11 @@ class MyFilmLordOfTheRings extends Component {
   };
   render() {
     return (
-      <>
+      <Container>
         {this.state.isLoading && <Loading />}
         {this.state.isError && <Error />}
         {this.state.films.Search && <FilmCardsLordOfTheRings films={this.state.films.Search} />}
-      </>
+      </Container>
     );
   }
 }

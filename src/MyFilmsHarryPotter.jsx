@@ -3,6 +3,7 @@ import { Component } from "react";
 import FilmCardsHarryPotter from "./FilmCardsHarryPotter";
 import Loading from "./Loading";
 import Error from "./Error";
+import { Container } from "react-bootstrap";
 
 class MyFilmHarryPotter extends Component {
   state = {
@@ -34,11 +35,11 @@ class MyFilmHarryPotter extends Component {
   };
   render() {
     return (
-      <>
+      <Container>
         {this.state.isLoading && <Loading />}
         {this.state.isError && <Error />}
         {this.state.films.Search && <FilmCardsHarryPotter films={this.state.films.Search} />}
-      </>
+      </Container>
     );
   }
 }
