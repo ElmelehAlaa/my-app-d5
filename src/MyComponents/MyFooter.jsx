@@ -6,7 +6,7 @@ const MyFooter = (props) => (
       <div className="row text-center mt-5">
         <div className="col-6 offset-3">
           <div className="row">
-            <div className="col col-12 text-left mb-2">
+            <div className="col col-12 text-left mb-2 text-light">
               <i className="fa fa-facebook footer-icon"></i>
               <i className="fa fa-instagram footer-icon"></i>
               <i className="fa fa-twitter footer-icon"></i>
@@ -105,14 +105,14 @@ const MyFooter = (props) => (
             </Col>
           </div>
           <Row>
-            <div className="col col-12 text-left mb-2">
-              <button type="button" className="btn btn-sm footer-button rounded-0 mt-3">
+            <div className="col col-12 text-left mb-2 ">
+              <button type="button" className="btn btn-sm footer-button rounded-0 mt-3 text-white">
                 Service Code
               </button>
             </div>
           </Row>
           <Row>
-            <div className="col col-12 text-left mb-2 mt-2 copyright">© 1997-2022 Netflix, Inc.</div>
+            <div className="col col-12 text-left mb-2 mt-2 copyright text-white">© 1997-2022 Netflix, Inc.</div>
           </Row>
         </div>
       </div>
